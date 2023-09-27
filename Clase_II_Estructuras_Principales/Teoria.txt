@@ -1,4 +1,4 @@
-# Tipos de datos
+# Tipos de datos primitivos
 Son 8 en total
 1. Enteros
 1.1 Int: 4 bytes desde -2147483648 hasta 2147483647
