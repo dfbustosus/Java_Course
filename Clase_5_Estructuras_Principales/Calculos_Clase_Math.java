@@ -1,4 +1,4 @@
-package Clase_V_Estructuras_Principales;
+package Clase_5_Estructuras_Principales;
 
 public class Calculos_Clase_Math {
     public static void main(String[] args){

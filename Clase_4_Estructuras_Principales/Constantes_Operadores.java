@@ -1,4 +1,4 @@
-package Clase_IV_Estructuras_Principales;
+package Clase_4_Estructuras_Principales;
 
 public class Constantes_Operadores{
     public static void main(String[] args){

@@ -1,4 +1,4 @@
-package Clase_I_Estructuras_Principales;
+package Clase_1_Estructuras_Principales;
 
 public class PrimeraClase {
     public static void main(String args[]){

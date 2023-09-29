@@ -1,4 +1,4 @@
-package Clase_III_Estructuras_Principales;
+package Clase_3_Estructuras_Principales;
 
 public class Variables {
     public static void main(String[] args){
