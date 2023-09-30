@@ -10,13 +10,21 @@ Voy a representar algunos, pero debes saber que hay muchas cosas dentro de cada 
 Cada paquete luego entonces tiene sus propias clases
 
 1. Paquetes
+   
    1.1. Java
+      
       1.1.1. java.awt 
+      
       1.1.2. java.util (java.util.regex)
+      
       1.1.3. java.io
+      
       1.1.4. java.lang
+   
    1.2. javax
+   
       1.2.1. javax.activity
+   
       1.2.2. javax.annotation
 
 - ¿Porque son necesarios lo paquetes y para que inventaron eso?
