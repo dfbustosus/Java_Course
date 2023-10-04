@@ -1,5 +1,4 @@
 package Clase_x_12_POO.POO;
-
 public class Auto {
     // caracteristicas comunes
     private int ruedas; // cuantas hay?
@@ -66,5 +65,15 @@ public class Auto {
         }else{
             return "Auto no tiene radio";
         }
+    }
+    // Metodo Setter y getter (No es recomedable pero es posible hacerlo)
+    public String imprime_peso_total(){
+        int peso_total=0;
+        if (this.radio == true){
+            peso_total= this.peso+100;
+        }else{
+            peso_total= this.peso+0;
+        }
+        return "Precio total: " + peso_total;
     }
 }
