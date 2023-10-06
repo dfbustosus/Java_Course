@@ -15,7 +15,7 @@ public class Metodos_Static {
         System.out.println(t3.muestra_datos());
         System.out.println(t4.muestra_datos());
 
-        System.out.println(Empleados.dae_id_siguiente()); // Metodo static
+        //System.out.println(Empleados.dae_id_siguiente()); // Metodo static
     }
     
 }
@@ -25,8 +25,8 @@ class Empleados {
     public Empleados(String nom){
         nombre= nom;
         seccion= "RRHH";
-        Id= IdSiguiente;
-        IdSiguiente++;
+        //Id= IdSiguiente;
+        //IdSiguiente++;
     }
     // SETTER seccion
     public void cambiaseccion(String seccion_x){
@@ -34,14 +34,14 @@ class Empleados {
     }
     // GETTER datos
     public String muestra_datos(){
-        return "El nombre es: " + nombre + " y la seccion es: "+seccion + " y el Id es: " +Id; 
+        return "El nombre es: " + nombre + " y la seccion es: "+seccion ; 
     }
     // Metodo static (No puede acceder a variables private)
-    public static String dae_id_siguiente(){
-        return "Id siguiente es: "+ IdSiguiente;
-    }
+    //public static String dae_id_siguiente(){
+    //    return "Id siguiente es: "+ IdSiguiente;
+    //}
     private final String nombre; // constante que no cambia
     private String seccion;
-    private int Id; 
-    private static int IdSiguiente=1; // variable static
+    //private int Id; 
+    //private static int IdSiguiente=1; // variable static
 }
