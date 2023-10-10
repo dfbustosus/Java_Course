@@ -33,4 +33,3 @@ En notación sería:
 ```java
 class Jefe extends Empleado implements Interfaz1,Interfaz2
 ```
-

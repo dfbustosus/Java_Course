@@ -47,7 +47,7 @@ class Empleado_x implements Comparable{
 }
 
 // Herencia
-class Jefe extends Empleado_x{
+class Jefe extends Empleado_x implements Jefes{
     public Jefe(String nom, double sue, int ao, int mes, int dia){
         super(nom, sue, ao,mes, dia);
     }
@@ -62,6 +62,12 @@ class Jefe extends Empleado_x{
         double sueldo_jefe= super.dar_sueldo(); // especificando que llame a clase padre
         return incentivo+sueldo_jefe;
     }
+    //////////////////////////////////////////////////////////////7
+    /// PARTE 2 INTERFACES
+    public String tomar_decisiones(String decicion){
+        return "Uno de los jefes tomo la decision de "+ decicion;
+    }
+    //////////////////////////////////////////////////////////////7
 }
 
 // final se usa para detener la herencia entre clases
@@ -90,7 +96,26 @@ public class Empleado_Uso {
         // Refuncion o Casting sobre objetos en Arrays
         Jefe jefa_2 = (Jefe) misempleados[4];
         jefa_2.establecer_incentivo(10000);
+
+        // Principio de sustitucion
+        Empleado_x director_comercial = new Jefe("Andres", 50000, 2022, 10, 5);
+        // La clase Empleado implementa la interfaz empleado luego entonces
+        // podemos crear una instancia de la interfaz pero decirle que es de tipo Empleado
+        Comparable ejemplo = new Empleado_x("Juan", 20000, 2023, 11, 10);
+
+        // Uso de instanceof para detectar si una instancia pertenece a una clase o no
+        if(director_comercial instanceof Empleado_x){
+            System.out.println("director_comercial Pertenece a Jefe");
+        }
+        if(ejemplo instanceof Comparable){
+            System.out.println("ejemplo es de tipo interfaz comparable");
+        }
         
+        //////////////////////////////////////////////////////////////7
+        /// PARTE 2 INTERFACES
+        System.out.println(jefa_2.tomar_decisiones("Dar más bono de vacaciones"));
+        //////////////////////////////////////////////////////////////7
+
         // For mejorado para subir sueldo a todo
         for (Empleado_x e: misempleados){
             e.subir_sueldo(5);
