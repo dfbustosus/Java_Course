@@ -4,7 +4,7 @@ import java.util.Date; // Importar Date
 import java.util.GregorianCalendar; // Importar GregorianCalendar
 import java.util.Arrays;
 // Crear constructor (Clase para dar estado inicial)
-class Empleado_x implements Comparable{
+class Empleado_x implements Comparable, Trabajadores{
     public Empleado_x(String nom, double sue, int ao, int mes, int dia){
         nombre= nom;
         sueldo= sue;
@@ -40,6 +40,13 @@ class Empleado_x implements Comparable{
         }
         return 0; // Caso restante
     }
+    ///////////////////////////////////////////
+    // PARTE 3 interfaces
+    public double establecer_bonus(double bono){
+        return Trabajadores.bono_base+bono;
+    }
+    ///////////////////////////////////////////
+
 
     private String nombre;
     private double sueldo;
@@ -66,6 +73,12 @@ class Jefe extends Empleado_x implements Jefes{
     /// PARTE 2 INTERFACES
     public String tomar_decisiones(String decicion){
         return "Uno de los jefes tomo la decision de "+ decicion;
+    }
+    //////////////////////////////////////////////////////////////7
+    /// PARTE 3 INTERFACES
+    public double establecer_bonus(double bono){
+        double base= 2000;
+        return Trabajadores.bono_base + bono + base; // Esto es sobre los jefes
     }
     //////////////////////////////////////////////////////////////7
 }
@@ -112,8 +125,9 @@ public class Empleado_Uso {
         }
         
         //////////////////////////////////////////////////////////////7
-        /// PARTE 2 INTERFACES
+        /// PARTE 2 y 3 INTERFACES
         System.out.println(jefa_2.tomar_decisiones("Dar más bono de vacaciones"));
+        System.out.println("El jefe "+ jefe_RH.darnombre() + " tiene bonus de: "+jefa_2.establecer_bonus(500));
         //////////////////////////////////////////////////////////////7
 
         // For mejorado para subir sueldo a todo
