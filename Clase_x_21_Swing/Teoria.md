@@ -22,5 +22,11 @@ Class JFrame extends Frame
 - Nacen con un tamaó inutil. Se necesita el metódo `setsize` para darles tamaño
 - Conviene decir que debe hacer el programa si se cierra un frame
 
-
+# Métodos importantes de JFrame
+1. Object
+2. Component > (`setLocation(x,y)`, `setBounds(x,y,anchonlargo)`)
+3. Container
+4. Window > (`setIconImage(Image image)`)
+5. Frame > (`setTitle(String title)`)
+6. JFrame > (`setResizeble(boolean resizable)`)
 

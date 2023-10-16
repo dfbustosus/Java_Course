@@ -1,5 +1,6 @@
 package Clase_x_21_Swing;
 import javax.swing.JFrame;
+import java.awt.Frame;
 
 public class CrearFrames{
     public static void main (String[] args){
@@ -14,6 +15,10 @@ class miFrame extends JFrame{
     // Constructor
     public miFrame(){
         setSize(500, 300);
+        //setBounds(500,300,250,250);
+        //setResizable(false);// impedir que se pueda modificar
+        //setExtendedState(Frame.MAXIMIZED_BOTH);// Maximizar todo el tamaño de ventana
+        //setTitle("Ventana de David");
 
     }
 }
