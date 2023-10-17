@@ -1,4 +1,4 @@
-package Clase_x_21_Swing;
+package Clase_x_21_Swing.app1;
 import java.awt.Frame;
 import javax.swing.JFrame;
 
