@@ -30,3 +30,13 @@ Class JFrame extends Frame
 5. Frame > (`setTitle(String title)`)
 6. JFrame > (`setResizeble(boolean resizable)`)
 
+# Como crear laminas
+
+Con la clase `JPanel` que se encarga de construir láminas donde poder dibujar y escribir
+
+**Herencia de JPanel**
+
+Object >> Component >> Container >> JComponent >> JPanel
+
+Podemo usar por ejemplo el método `paintComponent(Graphics g)` que viene que JComponent pero que se hereda en JPanel
+
