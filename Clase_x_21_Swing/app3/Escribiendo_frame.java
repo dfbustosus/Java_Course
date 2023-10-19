@@ -1,11 +1,7 @@
 package Clase_x_21_Swing.app3;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-
-import java.awt.Toolkit;
-import java.awt.Dimension;
 import java.awt.Graphics;
-import java.awt.Image;
 
 public class Escribiendo_frame {
     public static void main(String[] args){
