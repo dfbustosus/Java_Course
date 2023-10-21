@@ -19,7 +19,7 @@ Class JFrame extends Frame
 # Caracteristicas de Frames (marcos)
 
 - Nacen invisibles. Se necesitan el metódo `setVisible` para hacerlos visibles
-- Nacen con un tamaó inutil. Se necesita el metódo `setsize` para darles tamaño
+- Nacen con un tamañó inutil. Se necesita el metódo `setsize` para darles tamaño
 - Conviene decir que debe hacer el programa si se cierra un frame
 
 # Métodos importantes de JFrame
@@ -39,4 +39,9 @@ Con la clase `JPanel` que se encarga de construir láminas donde poder dibujar y
 Object >> Component >> Container >> JComponent >> JPanel
 
 Podemo usar por ejemplo el método `paintComponent(Graphics g)` que viene que JComponent pero que se hereda en JPanel
+
+# Java 2D
+Pertenece al paquete `Java.awt.geom`
+
+- Interfaz Shape > Clases Rectangle2D, Ellipse2d, Line2D
 
