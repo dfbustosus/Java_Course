@@ -45,3 +45,8 @@ Pertenece al paquete `Java.awt.geom`
 
 - Interfaz Shape > Clases Rectangle2D, Ellipse2d, Line2D
 
+# Colores
+
+- Clase `Graphics2D` con el metodo `setPaint(Color)`
+- Clase `Color` (constantes: blue, red, green, yellow)
+- Clase `JPanel` con metodos `setBackground(Color)` y `setForeground(Color)`
