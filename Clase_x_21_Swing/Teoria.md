@@ -50,3 +50,8 @@ Pertenece al paquete `Java.awt.geom`
 - Clase `Graphics2D` con el metodo `setPaint(Color)`
 - Clase `Color` (constantes: blue, red, green, yellow)
 - Clase `JPanel` con metodos `setBackground(Color)` y `setForeground(Color)`
+
+# Fuentes
+
+- Clase `Graphics2D` con el metodo `setFont(Font)`
+- Clase `Font` con metodo `Font(tipo, estilo, tamaño)` (bold, plain, italic)
