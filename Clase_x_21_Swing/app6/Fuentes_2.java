@@ -1,5 +1,4 @@
 package Clase_x_21_Swing.app6;
-
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;

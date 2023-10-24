@@ -55,3 +55,13 @@ Pertenece al paquete `Java.awt.geom`
 
 - Clase `Graphics2D` con el metodo `setFont(Font)`
 - Clase `Font` con metodo `Font(tipo, estilo, tamaño)` (bold, plain, italic)
+
+# Imagenes
+**Paquete:** `java.awt`
+- Clase `Image` con los metodos importantes `getWidth(), getHeight()`
+
+**Paquete:** `Javax.imageio.Imageio`
+- Clase `ImageIO` metodo `read`
+
+**Paquete:** `java.awt`
+- Clase `Graphics` metodos `drawImage(), copyArea()`
