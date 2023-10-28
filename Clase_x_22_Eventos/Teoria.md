@@ -18,3 +18,17 @@ Ejemplo: Imagina que tengas un boton en una lamina y que al pulsarlo el fondo de
 
 - Objeto fuente Clase `JButton` con método `addActionListener()`
 - Objeto Listener Clase `JPanel` con interfaz `ActionListener` y metodo `actionPerformed()`
+
+# Eventos de Ventana
+
+- Interfaz ```Window Listener``` que implementa 7 metodos
+
+**Estamos obligados a construir los 7 metodos de acá abajo** debido a la estructura de interfaces.
+
+1. `windowActivated(WindowEvent e)`
+2. `windowClosed(WindowEvent e)`
+3. `windowClosing(WindowEvent e)`
+4. `windowDeactivate(WindowEvent e)`
+5. `windowDeinconified(WindowEvent e)`
+6. `windowiconified(WindowEvent e)`
+7. `windowOpened(WindowEvent e)`
