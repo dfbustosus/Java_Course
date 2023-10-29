@@ -32,3 +32,13 @@ Ejemplo: Imagina que tengas un boton en una lamina y que al pulsarlo el fondo de
 5. `windowDeinconified(WindowEvent e)`
 6. `windowiconified(WindowEvent e)`
 7. `windowOpened(WindowEvent e)`
+
+Cuando una ventana cambia de estado también es útil conocer la interfaz `WindowStateListener` con un solo método `windowsStateChanged(WindowEvent e)`. 
+
+`WindowEvent` tambien es una clase con dos métodos principales
+1. `getNewState()`: estado nuevo de ventana
+2. `getOldState()`: estado posterior ventana
+
+
+
+
