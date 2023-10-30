@@ -39,6 +39,14 @@ Cuando una ventana cambia de estado también es útil conocer la interfaz `Windo
 1. `getNewState()`: estado nuevo de ventana
 2. `getOldState()`: estado posterior ventana
 
+# Clases adaptadoras
+
+1. `KeyAdapter` (No por el momento)
+2. `WindowAdapter` con interfaces como `WindowFocusListener`, `WindowsStateListener`, `WindowListener` y `EventListener`
+3. `MouseAdapter` (no por le momento)
+
+
+
 
 
 
