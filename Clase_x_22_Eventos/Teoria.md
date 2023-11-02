@@ -45,7 +45,16 @@ Cuando una ventana cambia de estado también es útil conocer la interfaz `Windo
 2. `WindowAdapter` con interfaces como `WindowFocusListener`, `WindowsStateListener`, `WindowListener` y `EventListener`
 3. `MouseAdapter` (no por le momento)
 
+# Eventos de raton
+- Interfaz `MouseListener` con la clase `MouseAdapter`
+- Dentro de `MouseListener` tenemos distintos metodos como
+1. `mouseClicked(MouseEvent e)`
+2. `mouseEntered(MouseEvent e)`
+3. `mouseExited(MouseEvent e)`
+4. `mousePressed(MouseEvent e)`
+5. `mouseReleased(MouseEvent e)`
 
+La clase `MouseEvent` tiene distintos metodos como `getX, getY, getModifiers,getClick` y distintos campos de clase como `BUTTON1_DOWN_MASK, BUTTON2_DOWN_MASK, BUTTON3_DOWN_MASK`
 
 
 
