@@ -56,6 +56,14 @@ Cuando una ventana cambia de estado también es útil conocer la interfaz `Windo
 
 La clase `MouseEvent` tiene distintos metodos como `getX, getY, getModifiers,getClick` y distintos campos de clase como `BUTTON1_DOWN_MASK, BUTTON2_DOWN_MASK, BUTTON3_DOWN_MASK`
 
+#  Eventos de Foco
 
+Esto se refiere a la selección de ventanas o ventana activa. E.g cuando tienes dos ventanas abiertas y eliges una de estas se mantiene seleccionada
 
+## Eventos foco orientados a componentes
 
+Interfaz `FocusListener` con clase `FocusAdapter` y metodos `focusGained(FocusEvent e)` y `focusLost(FocusEvent e)`
+
+## Eventos de foco orientados a ventanas
+
+Interfaz `WindowFocusListener` con la clase `WindowAdapter` y los metodos `windowGainedFocus(FocusEvent e)` y `windowLostFocus(FocusEvent e)`
