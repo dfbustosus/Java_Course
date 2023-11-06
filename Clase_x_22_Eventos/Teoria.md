@@ -67,3 +67,16 @@ Interfaz `FocusListener` con clase `FocusAdapter` y metodos `focusGained(FocusEv
 ## Eventos de foco orientados a ventanas
 
 Interfaz `WindowFocusListener` con la clase `WindowAdapter` y los metodos `windowGainedFocus(FocusEvent e)` y `windowLostFocus(FocusEvent e)`
+
+# Multiples fuentes de eventos
+
+Interfaz `Action` con distintos metodos como
+- `setEnabled(boolean b)`
+- `putValue(String Clave, Object valor)`
+- `addPropertyChanged(propertyChangedListener oyente)`
+- `isEnabled(boolean b)`
+- `getValue(String clave)`
+- `removePropertyChangedListener(PropertyChangedListener oyente)`
+- `actionPerformed(Event evento)`
+
+Ademas con la clase `AbstractAction` se pueden implementar todos los metodos de Action
